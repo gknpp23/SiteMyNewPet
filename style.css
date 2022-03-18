@@ -1,5 +1,36 @@
 /* RESET */
 
-body{
-    background-color: rgb(33, 73, 124);
+/* BREAKPOINTS */
+
+/*Smartphone Portrait*/
+
+/*Smartphone LandScape*/
+@media (min-width: 576px){
+    body{
+        background-color: rgb(124, 82, 20);
+    }
 }
+
+/*Tablet Portrait*/
+@media (min-width: 768px){
+    body{
+        background-color: rgb(98, 33, 124);
+    }
+    
+}
+
+/*Tablet LandScape*/
+@media (min-width: 992px){
+    body{
+        background-color: rgb(33, 124, 68);
+    }
+    
+}
+
+/*PC*/
+@media (min-width: 1200px){
+    body{
+        background-color: rgb(124, 95, 33);
+    }
+}
+
