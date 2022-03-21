@@ -1,4 +1,24 @@
+/* Importação ( Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
 /* RESET */
+* {
+    margin: 0;
+    border:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+/* Layout */
+.container{
+    margin: 0 auto;
+    background-color: aquamarine;
+}
 
 /* BREAKPOINTS */
 
@@ -9,12 +29,20 @@
     body{
         background-color: rgb(124, 82, 20);
     }
+    /* Layout */
+    .container{
+        max-width: 540px;
+    }
 }
 
 /*Tablet Portrait*/
 @media (min-width: 768px){
     body{
         background-color: rgb(98, 33, 124);
+    }
+    /* Layout */
+    .container{
+        max-width: 720px;
     }
     
 }
@@ -24,6 +52,10 @@
     body{
         background-color: rgb(33, 124, 68);
     }
+    .container{
+        max-width: 960px;
+    }
+    
     
 }
 
@@ -31,6 +63,9 @@
 @media (min-width: 1200px){
     body{
         background-color: rgb(124, 95, 33);
+    }
+    .container{
+        max-width: 1140px;
     }
 }
 
