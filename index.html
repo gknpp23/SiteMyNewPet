@@ -13,28 +13,41 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header> 
-        <div class="container">
-
+    <header > 
+        <div class="container flex">
+            <div id="logo">
+                <img src="img/paw6.png" alt="pet">
+            </div>
+            <nav>
+                <input type="checkbox"  id="check">
+                <label for="check">&#x268c;</label>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#adocao">Adoção</a></li>
+                    <li><a href="#contato">contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
     <!-- Destaque - projeto -->
-    <main>
+    <main id="inicio"> 
         <div class="container"> 
-            <h1>Projeto MyNewPet</h1>
+            <h1>Projeto - MyNewPet</h1>
             <h2>Onde amor e cuidado se encontram!</h2>
         </div>
     </main>
 
     <!-- Sobre -->
-    <section>
+    <section id="sobre">
         <div class="container">
             <h2>Sobre nós</h2>
         </div>
     </section>
 
     <!-- Adoção -->
-    <section>
+    <section id="adocao">
         <div class="container">
             <h2>Adoção</h2>
             <h3>Caẽs</h3>
@@ -43,10 +56,13 @@
        
     </section>
     <!-- Rodape -->
-    <footer> 
+    <footer id="contato"> 
         <div class="container">
-            
+
         </div>
     </footer>
+    
+    <a href="#inicio" id="topo"><img src="img/topo.png" alt="Topo do site"></a>
+    
 </body>
 </html>
