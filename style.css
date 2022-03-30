@@ -12,20 +12,24 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    background-color: rgb(54, 161, 227);
+    
 }
 
 /* Layout */
 .container{
     margin: 0 auto;
-    background-color: rgb(247, 241, 114);
+   
 }
 
 /* Flex */
 .flex{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(209, 204, 88);
+   
+}
+.flex2{
+    display: flex;
+    align-items: center;
 }
 
 /* Topo do site */
@@ -39,25 +43,33 @@ body {
     height: 40px;
 }
 
-/* BREAKPOINTS */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>> BREAKPOINTS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 /*Smartphone Portrait*/
 
+/* Cabeçalho */
+
 header{
     height: 80px;
+    background-color: rgb(209, 170, 88);
 }
 
 #logo img{
     width: 75px;
     height: 75px;
+    padding-right: 80px;
+    
 }
 #check{
     display:none;
 }
+
 nav label{
     font-size: 3em;
     padding-right: 15px;
 }
+
 nav ul{
     list-style:none;
     background-color: rgb(54, 147, 227);
@@ -69,6 +81,7 @@ nav ul{
     transition: all 0.5s;
 
 }
+
 #check:checked ~ ul{
     right: 0;
 }
@@ -84,11 +97,33 @@ nav ul li a {
     
 }
 
+/* Destaque */
+#inicio{
+    height: 50vh;
+    padding: 50px 0px;
+    background: url(img/background-S02.jpg);
+    background-size: cover;
+    background-position: center;
+  
+}
+#destaqProj{
+    display: none;
+    
+}
+#textProj{
+    color: #000;
+    padding: 0px 15px;
+}
+#textProj h1{
+    margin-bottom: 15px;
+}
+#textProj h2{
+    margin-bottom: 15px;
+}
+
 /*Smartphone LandScape*/
 @media (min-width: 576px){
-    body{
-        background-color: rgb(54, 161, 227);
-    }
+   
     /* Layout */
     .container{
         max-width: 540px;
@@ -97,9 +132,7 @@ nav ul li a {
 
 /*Tablet Portrait*/
 @media (min-width: 768px){
-    body{
-        background-color: rgb(54, 161, 227);
-    }
+  
     /* Layout */
     .container{
         max-width: 720px;
@@ -109,9 +142,7 @@ nav ul li a {
 
 /*Tablet LandScape*/
 @media (min-width: 992px){
-    body{
-        background-color: rgb(54, 161, 227);
-    }
+   
     .container{
         max-width: 960px;
     }
@@ -121,21 +152,23 @@ nav ul li a {
 
 /*PC*/
 @media (min-width: 1200px){
-    body{
-        background-color: rgb(54, 161, 227);
-    }
+    
     .container{
         max-width: 1140px;
+       
     }
 
     header{
         height: 150px;
  
     }
-    
+    #logo{
+        margin-left: 0px;
+    }
     #logo img{
         width: 145px;
         height: 145px;
+        padding-right: 150px;
     }
     nav label{
         display: none;
@@ -150,12 +183,37 @@ nav ul li a {
         float: left;
         margin-right: 1em;
         border: 0;
+        
     }
     nav ul li a:hover{
         color: rgb(54, 161, 227);
         font-size: 25px;
         transition: all 0.4s;
     }
+
+    /* Destaque */
+
+    #destaqProj{
+        
+        display: inline;
+
+       
+    }
+
+    #destaqProj img{
+
+        border-radius: 50%;
+        width: 290px;
+        height: 270px;
+        
+        
+    }
+
+    #textProj{
+      
+        margin-left: 70px;
+    }
+ 
 }
 
 
