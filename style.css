@@ -31,6 +31,10 @@ body {
     display: flex;
     align-items: center;
 }
+.flex3{
+    display:flex;
+    flex-direction: column;
+}
 
 /* Topo do site */
 #topo{
@@ -73,7 +77,7 @@ nav label{
 nav ul{
     list-style:none;
     background-color: rgb(54, 147, 227);
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     position: fixed;
     top: 80px;
@@ -121,12 +125,34 @@ nav ul li a {
     margin-bottom: 15px;
 }
 
+/* Sobre */
+#sobre{
+    padding: 50px 10px;
+    background-color: rgb(54, 147, 227);
+}
+#sobre h2{
+    margin-bottom: 10px;
+}
+#sobre p{
+    margin-bottom: 25px;
+}
+#video iframe{
+    width: 340px;
+    height: 191px;  /* Foi realizado calculo para manter a proporçao pelo site - https://www.digitalrebellion.com/webapps/aspectcalc?calc=height&cbo_aspect=a178&res_w2=560 */
+    border: 0;
+}
+
 /*Smartphone LandScape*/
 @media (min-width: 576px){
    
     /* Layout */
     .container{
         max-width: 540px;
+    }
+    /* Sobre */
+    #video iframe{
+        width: 560px;
+        height: 315px;
     }
 }
 
@@ -137,6 +163,11 @@ nav ul li a {
     .container{
         max-width: 720px;
     }
+    /* Sobre */
+    #video iframe{
+        width: 560px;
+        height: 315px;
+    }
     
 }
 
@@ -145,6 +176,11 @@ nav ul li a {
    
     .container{
         max-width: 960px;
+    }
+    /* Sobre */
+    #video iframe{
+        width: 560px;
+        height: 315px;
     }
     
     
@@ -155,36 +191,41 @@ nav ul li a {
     
     .container{
         max-width: 1140px;
-       
     }
 
     header{
         height: 150px;
  
     }
+
     #logo{
         margin-left: 0px;
     }
+
     #logo img{
         width: 145px;
         height: 145px;
         padding-right: 150px;
     }
+
     nav label{
         display: none;
     }
+
     nav ul{
         position: static;
         height: auto;
         background-color: transparent;
         margin-top: 80px;
     }
+
     nav ul li{
         float: left;
         margin-right: 1em;
         border: 0;
         
     }
+
     nav ul li a:hover{
         color: rgb(54, 161, 227);
         font-size: 25px;
@@ -194,24 +235,31 @@ nav ul li a {
     /* Destaque */
 
     #destaqProj{
-        
         display: inline;
-
-       
     }
 
     #destaqProj img{
-
         border-radius: 50%;
         width: 290px;
-        height: 270px;
-        
-        
+        height: 270px; 
     }
 
     #textProj{
-      
         margin-left: 70px;
+    }
+
+    /* Sobre */
+  
+    #video iframe{
+        width: 560px;
+        height: 315px;
+    }
+    #textoSobre{
+        padding-left: 10px;
+    }
+    .flex3{
+        flex-direction: row;
+        align-items: center;
     }
  
 }
