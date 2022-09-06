@@ -36,15 +36,22 @@ body {
     flex-direction: column;
 }
 
+.Card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 /* Topo do site */
 #topo{
     position: fixed;
-    right:10px;
-    bottom:10px;
+    right:7px;
+    bottom:1px;
 }
 #topo img{
-    width: 40px;
-    height: 40px;
+    width: 90px;
+    height: 90px;
 }
 
 
@@ -56,7 +63,8 @@ body {
 
 header{
     height: 80px;
-    background-color: rgb(209, 170, 88);
+    background-color: rgb(233, 220, 104);/*rgb(252, 242, 112); /*rgb(209, 170, 88)*/
+    border-bottom: 2px solid rgb(54, 147, 227);
 }
 
 #logo img{
@@ -96,7 +104,7 @@ nav ul li{
 }
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-weight: bolder;
     
 }
@@ -105,7 +113,8 @@ nav ul li a {
 #inicio{
     height: 50vh;
     padding: 50px 0px;
-    background: url(img/background-S02.jpg);
+    background-image:linear-gradient(to left,  rgb(236, 218, 53) , rgb(241, 169, 74));
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
   
@@ -129,6 +138,7 @@ nav ul li a {
 #sobre{
     padding: 50px 10px;
     background-color: rgb(54, 147, 227);
+    color:white;
 }
 #sobre h2{
     margin-bottom: 10px;
@@ -142,6 +152,55 @@ nav ul li a {
     border: 0;
 }
 
+ /* Adoção  */
+
+ .Card{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#adocao{
+    background-color: rgb(231, 228, 228);
+}
+
+.cards{
+    background-color: white;
+    border-radius: 15px;
+    width: 320px;
+    height: 400px;       
+    margin: 20px 20px;
+    
+}
+
+.image{
+    height: 180px;
+    margin-bottom: 20px;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.image-dog{
+    background-image: url(/img/dog-card01.jpg);
+    
+}
+.image-cat{
+    background-image: url(/img/cat-Card01.jpg);
+}
+.cards p{
+    padding: 10px;
+}
+.cards h3{
+    margin-left: 120px;
+}
+ 
+
+/* Rodapé */
+footer{
+    background-color: rgb(58, 57, 57);
+    color:white;
+}
+
+
+
 /*Smartphone LandScape*/
 @media (min-width: 576px){
    
@@ -154,6 +213,7 @@ nav ul li a {
         width: 560px;
         height: 315px;
     }
+  
 }
 
 /*Tablet Portrait*/
@@ -206,6 +266,7 @@ nav ul li a {
         width: 145px;
         height: 145px;
         padding-right: 150px;
+        opacity:80%;
     }
 
     nav label{
@@ -243,6 +304,7 @@ nav ul li a {
         width: 290px;
         height: 270px; 
     }
+  
 
     #textProj{
         margin-left: 70px;
@@ -261,7 +323,50 @@ nav ul li a {
         flex-direction: row;
         align-items: center;
     }
- 
+
+    
+    /* Adoção  */
+
+    .Card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #adocao{
+        background-color: rgb(231, 228, 228);
+    }
+
+    .cards{
+        background-color: white;
+        border-radius: 15px;
+        width: 320px;
+        height: 400px;       
+        margin: 20px 20px;
+        
+    }
+
+    .image{
+        height: 180px;
+        margin-bottom: 20px;
+        background-size: cover;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .image-dog{
+        background-image: url(/img/dog-card01.jpg);
+        
+    }
+    .image-cat{
+        background-image: url(/img/cat-Card01.jpg);
+    }
+    .cards p{
+        padding: 10px;
+    }
+    .cards h3{
+        margin-left: 120px;
+    }
+   
+    
+   
 }
 
 
