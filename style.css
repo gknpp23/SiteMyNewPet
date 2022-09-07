@@ -35,7 +35,15 @@ body {
     display:flex;
     flex-direction: column;
 }
-
+.flex4{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.flex5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .Card{
     display: flex;
     justify-content: center;
@@ -63,8 +71,8 @@ body {
 
 header{
     height: 80px;
-    background-color: rgb(233, 220, 104);/*rgb(252, 242, 112); /*rgb(209, 170, 88)*/
-    border-bottom: 2px solid rgb(54, 147, 227);
+    background-color: #ebda40;/*#ebcb3e;/*rgb(252, 242, 112); /*rgb(209, 170, 88)*/
+    border-bottom: 2px solid #3693e3;
 }
 
 #logo img{
@@ -84,7 +92,7 @@ nav label{
 
 nav ul{
     list-style:none;
-    background-color: rgb(54, 147, 227);
+    background-color: #3693e3;
     height: 150vh;
     width: 100%;
     position: fixed;
@@ -104,7 +112,7 @@ nav ul li{
 }
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #3693e3;
     font-weight: bolder;
     
 }
@@ -113,7 +121,8 @@ nav ul li a {
 #inicio{
     height: 50vh;
     padding: 50px 0px;
-    background-image:linear-gradient(to left,  rgb(236, 218, 53) , rgb(241, 169, 74));
+    background-color: #e7e4e4;
+    /*background-image:linear-gradient(to top,  #dbc816 , #f0e086/*rgb(241, 210, 74)*/
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -124,7 +133,7 @@ nav ul li a {
     
 }
 #textProj{
-    color: #000;
+    color: #3693e3;
     padding: 0px 15px;
 }
 #textProj h1{
@@ -137,7 +146,7 @@ nav ul li a {
 /* Sobre */
 #sobre{
     padding: 50px 10px;
-    background-color: rgb(54, 147, 227);
+    background-color: #3693e3;
     color:white;
 }
 #sobre h2{
@@ -160,7 +169,7 @@ nav ul li a {
 }
 
 #adocao{
-    background-color: rgb(231, 228, 228);
+    background-color: #e7e4e4;
 }
 
 .cards{
@@ -194,8 +203,36 @@ nav ul li a {
  
 
 /* Rodapé */
+address {
+    padding: 35px 10px 50px 10px;
+    background-color: #ebda40;
+    color: #087fe7;
+}
+address a{
+    text-decoration: none;
+    color: #087fe7;
+}
+address img{
+    padding-top: 15px;
+}
+#IconLocal {
+    display: none;
+}
+#maps{
+    display: none;
+}
+#social{
+    margin-bottom: 25px;
+}
+#social a{
+    margin-right: 10px;
+}
 footer{
-    background-color: rgb(58, 57, 57);
+    padding: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #3a3939;
+    text-align: center;
     color:white;
 }
 
@@ -214,6 +251,18 @@ footer{
         height: 315px;
     }
   
+    /* Rodapé */
+    .flex4 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #social{
+        margin: 0;
+    }
+    
 }
 
 /*Tablet Portrait*/
@@ -364,6 +413,26 @@ footer{
     .cards h3{
         margin-left: 120px;
     }
+
+    /* Rodape */
+    .flex5{
+        flex-direction: row;
+    }
+    #IconLocal {
+        display: inline;
+    }
+    #MapaLocal {
+        display: none;
+    }
+    #maps{
+        display: inline;
+    }
+
+    #maps iframe{
+        width: 400px;
+        height: 300px;
+    }
+
    
     
    
