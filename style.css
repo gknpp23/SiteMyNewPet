@@ -192,11 +192,11 @@ nav ul li a {
     border-radius: 15px 15px 0px 0px;
 }
 .image-dog{
-    background-image: url(/img/dog-card01.jpg);
+    background-image: url(img/dog-card01.jpg);
     
 }
 .image-cat{
-    background-image: url(/img/cat-Card01.jpg);
+    background-image: url(img/cat-Card01.jpg);
 }
 .cards p{
     padding: 10px;
