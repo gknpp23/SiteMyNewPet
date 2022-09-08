@@ -1,5 +1,6 @@
 /* Importação ( Google Fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 
 /* RESET */
@@ -83,11 +84,13 @@ header{
 }
 #check{
     display:none;
+    
 }
 
 nav label{
     font-size: 3em;
     padding-right: 15px;
+    color: #3693e3;
 }
 
 nav ul{
@@ -112,7 +115,7 @@ nav ul li{
 }
 nav ul li a {
     text-decoration: none;
-    color: #3693e3;
+    color: #d9e5f0;
     font-weight: bolder;
     
 }
@@ -174,6 +177,7 @@ nav ul li a {
 
 .cards{
     background-color: white;
+    color: #3a3939;
     border-radius: 15px;
     width: 320px;
     height: 400px;       
@@ -205,21 +209,29 @@ nav ul li a {
 /* Rodapé */
 address {
     padding: 35px 10px 50px 10px;
+    font-style: normal;
     background-color: #ebda40;
-    color: #087fe7;
+    color: #3a3939;
 }
 address a{
     text-decoration: none;
-    color: #087fe7;
+    color: #3a3939;
 }
 address img{
     padding-top: 15px;
+    margin-bottom: 10px;
+    width: 48px;
+    height: 48px;
 }
+
 #IconLocal {
     display: none;
 }
 #maps{
     display: none;
+}
+#fone{
+    margin-top: 42px;
 }
 #social{
     margin-bottom: 25px;
@@ -304,6 +316,7 @@ footer{
 
     header{
         height: 150px;
+        
  
     }
 
@@ -336,8 +349,12 @@ footer{
         
     }
 
+    nav ul li a {
+        color: #36a1e3;
+        
+    }
     nav ul li a:hover{
-        color: rgb(54, 161, 227);
+        color: #36a1e3;
         font-size: 25px;
         transition: all 0.4s;
     }
@@ -382,7 +399,7 @@ footer{
     }
     
     #adocao{
-        background-color: rgb(231, 228, 228);
+        background-color: #e7e4e4;
     }
 
     .cards{
